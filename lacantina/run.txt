@@ -1,0 +1,45 @@
+newgrp docker
+docker compose up --build
+curl -X POST http://0.0.0.0:8000/post-to-facebook
+
+
+greetings = [
+
+{"message": "Hello, everyone! Hope you're having an amazing day!",
+"menu": "Adobo",
+"price": 100,
+"img": "https://media.istockphoto.com/id/480105918/photo/chicken-and-pork-adobo-filipino-food.jpg?s=612x612&w=0&k=20&c=X71iXuT-hAsTWPz-7TbnauK7z4ovt2Z8r_GqCx_WpV8="},
+
+{"message": "Wishing you all a day full of smiles and positivity!",
+"menu": "Sinigang",
+"price": 120,
+"img": "https://media.istockphoto.com/id/623283160/photo/sinigang-na-baboy-filipino-cuisine.jpg?s=612x612&w=0&k=20&c=Pw2VNqaBR7M1J9jqSGsBeHCSn8eLoLQE6fQC-48cyu0="},
+
+{"message": "Good vibes only today—let's make it count!",
+"menu": "Pancit",
+"price": 150,
+"img": "https://media.istockphoto.com/id/1485348992/photo/a-large-serving-of-pancit-canton-guisado-a-popular-filipino-noodle-dish.jpg?s=612x612&w=0&k=20&c=9W_mtAPHks7Ex8aTEJRP9Lk8Hsazh6boCcQzylhUFK8="},
+
+{"message": "Hey there! Hope you're ready to conquer the day!",
+"menu": "Lechon",
+"price": 200,
+"img": "https://media.istockphoto.com/id/654608924/photo/famous-philippines-food-lechon.jpg?s=612x612&w=0&k=20&c=Yqq1DdxrI4TjxLnU0sAofPlzRIF8Z3fuJU0GrsaYMcw="},
+
+{"message": "Sending warm greetings to brighten up your day!",
+"menu": "Bicol Express",
+"price": 180,
+"img": "https://media.istockphoto.com/id/1053332722/photo/filipino-bicol-express-from-spiced-pork-in-coconut-milk-close-up-horizontal.jpg?s=612x612&w=0&k=20&c=T5eO8h8EM7W6f5E9VFjQ7pk46WzhHBSbz63ACw0DHkI="},
+
+{"message": "Happy Friday! Let's start it off with a smile!",
+"menu": "Kare-Kare",
+"price": 250,
+"img": "https://media.istockphoto.com/id/1139903539/photo/oxtails-in-peanut-gravy-filipino-flavor-kare-kare-on-brown-bowl.jpg?s=612x612&w=0&k=20&c=b5hOEx9pSi2HSnr0crjJLFi54_n1BpAJiwsUOlALifY="},
+
+{"message": "Hope you all are doing great—stay positive and keep shining!",
+"menu": "Pork Barbecue",
+"price": 170,
+"img": "https://media.istockphoto.com/id/155431877/photo/barbecue-ribs.jpg?s=612x612&w=0&k=20&c=dhgNEMKLSDT23JP3rk1VgBLSeaGeCX9mDxPg6W8otOs="}
+]
+
+
+sudo systemctl restart docker

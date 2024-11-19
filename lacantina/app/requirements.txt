@@ -1,0 +1,6 @@
+fastapi
+Jinja2
+uvicorn[gunicorn]
+httpx
+starlette
+openai==0.28
